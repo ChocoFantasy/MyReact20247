@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    display: flex;
+    /* flex-direction: row; 不寫不會錯 只是讓城市加強知道是橫向 */
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.wrapper {
+    background-color: #333;
+    color: #FFFFFF;
+    width: 450px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.create-form {
+    border: 1px solid #ccc;
+    margin: 25px 0;
+    /* top and botton create distance 25px */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.create-form>input {
+    outline: none; /* 無輪廓*/
+    border: none;
+    background: none;
+    /* Remove background color */
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.create-form>button {
+    border: none;
+    background-color: #ccc;
+    color: #333;
+    width: 50px;
+    height: 100%;
+    cursor: pointer ;/* mouse shape*/
+}
+
+.todo {
+    background-color: #ccc;
+    color:#333;
+    height: 40px;
+    padding: 0 10px;
+    margin-top: 10px;
+    border-radius: 5px; 
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+/* 點擊 todo 內容的變化：完成的樣子 */
+.completed {
+    opacity: .6;
+    text-decoration: line-through 3px red;
+}

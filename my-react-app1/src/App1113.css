@@ -1,0 +1,154 @@
+/* 預設間隔歸零 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 100%;
+}
+
+/* 特色區塊 */
+/* box 區塊的父元素 */
+.content {
+    display: flex;
+    /*橫放*/
+    justify-content: space-around;
+    /* 平均分配寬度，不貼齊前後 */
+    width: 80%;
+    /*整個區塊只需要頁面的80% */
+    margin: 50px auto;
+    /*上下50px 左右auto */
+}
+
+/* 每個 box 區塊 */
+.content .box {
+    width: 300px;
+    /* 每格寬度 */
+    text-align: center;
+    /*文字置中*/
+    /* border: 1px solid red; */
+    /*輔助看做哪個區塊用*/
+}
+
+/* 標題區塊 */
+.content .box h2 {
+    color: #CE0000;
+}
+
+/* box內的段落元素 */
+.content .box p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    /* 行距 */
+}
+
+/* 主標區塊 */
+
+.slogan {
+    text-align: center;
+    background-color: #CE0000;
+    color: white;
+    width: 100%;
+    /*滿版*/
+    font-size: 14px;
+    font-weight: bold;
+    /* padding: 10px; */
+    line-height: 50px;
+    /* 不使用 padding 使用行高(包含文字) */
+    margin: 30px 0,
+}
+
+/* 推薦課程區 */
+/* 標題 */
+.content2 h1 {
+    text-align: center;
+    color: #0b6e4f;
+    line-height: 100px;
+}
+
+/* 課程介紹 */
+/* 前面的呼叫指令如果確定其他地方都沒有(可省略)，不確定請一樣按照階層呼叫 */
+
+/* box2們的父元素 */
+.content2 .contentClass {
+    display: flex;
+    /*請將子元素橫放*/
+    justify-content: space-around; /*左右留白*/
+    width: 80%; /*總框架尺寸*/
+    margin: 50px auto; /*上下50px 左右隨機*/
+}
+
+/* box2們 */
+.content2 .contentClass .box2 {
+    width: 300px;
+    box-shadow: 0 0 10px #ccc; /* 水平位置10px 垂直位置10px 擴展度0 顏色黑 */
+    /* 四個邊角都有陰影的話，都設定陰影 */
+    padding: 10px; /* 框框內距 */
+}
+
+/* box2們的img */
+.content2 .contentClass .box2 img {
+    width: 100%; /*如果上一層有設定絕對單位，下一層可以設定%數*/
+}
+
+/* 推薦課程-小標題 */
+.content2 .contentClass .box2 h3{
+    font-size: 20px;
+}
+
+/* 推薦課程-說明 */
+.content2 .contentClass .box2 .b-text{
+    color: #6fcce3;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* 推薦課程-說明 */
+.content2 .contentClass .box2 p{
+    color: #888;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* 推薦課程-價格*/
+.content2 .contentClass .box2 .span1{
+    color: #888;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: line-through; /* 刪除線 */
+}
+
+.content2 .contentClass .box2 .span2{
+    color: #CE0000;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* 推薦課程-按鈕*/
+.content2 .contentClass .box2 button{
+    background-color: #CE0000;
+    color: white;
+    border:none; /* 無邊框 */
+    width: 100%; /*大小滿版，不然會只有寫文字的區塊*/
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 5px; /* 圓角 */
+    margin-top: 20px; /* 按鈕上方間距 */
+}
+
+/* 頁尾區 */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #FFF;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%; /* 根據上一層設寬度 */
+}
