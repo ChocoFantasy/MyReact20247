@@ -1,20 +1,19 @@
-import { useEffect } from "react";
-// import axios from 'axios';
-// import { IoUmbrellaOutline } from "react-icons/io5";
-import "./App.css";
+import About from "./pages/About";
+import Home from "./pages/Home";
 
-function App() {
- 
-
-
+export default function App() {
   return (
-    <>
-     <div className="wrap">
-      <h2>36小時天氣預報</h2>
-        <ShowCityContent/>
+    <div className="wrap">
+      <Navbar/>
+      <hr />
+      {/* 水平線下方放內容 */}
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
+        <Route path="/news" element={<News/>}></Route>
+      </Routes>
+    
     </div>
-    </>
-  )
-  
 
-export default App;
+  )
+}
